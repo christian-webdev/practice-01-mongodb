@@ -1,4 +1,5 @@
 import express from "express";
+import "./loadEnvironment.mjs";
 import posts from "./routes/posts.mjs";
 
 const PORT = process.env.PORT;

@@ -1,8 +1,7 @@
 import { MongoClient } from "mongodb";
-import dotenv from "dotenv"; //dotenv library is used to load the environment variables from .env file
-dotenv.config();
+// import "../loadEnvironment.mjs";
 
-const connectionString = process.env.ATLAS_URI || "";
+const connectionString = process.env.ATLAS_URI;
 const client = new MongoClient(connectionString);
 
 let conn;
